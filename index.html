@@ -11,12 +11,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <h1 class="text-center mt-4 mb-2 fw-bold">Find Book From <span style="color: darkorange;">Book-Archive</span></h1>
     <section class="container my-5">
         <!-- Input Box -->
         <div class="d-flex mx-auto w-50">
             <input type="text" class="form-control me-2" placeholder="Search by book name" id="searchInput">
             <button class="btn btn-dark" id="search-btn">Search</button>
         </div>
+    </section>
+
+    <section class="container">
+        <div id="total-result"></div>
+    </section>
+
+    <section class="container">
+        <!-- error field -->
+        <div id="error"></div>
+
+        <!-- Book details -->
+        <div id="book-details" class="row"></div>
     </section>
     <script src="js/main.js"></script>
 </body>
